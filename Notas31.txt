@@ -1,0 +1,5 @@
+Nota 3
+registrar usuario
+ojo cambiar Ferreteria3 en .htaccess, parameters
+
+crear el modelo usuario

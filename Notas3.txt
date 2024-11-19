@@ -1,0 +1,12 @@
+crear registro usuario
+en usuario controller crear el save 
+	-con un var_dum
+limpiar las url...(rutas amigables) con parameters
+
+para limpiar las url...se crea el .htaccess
+
+crear el errorController
+
+crear la funcion show_error() en index
+
+

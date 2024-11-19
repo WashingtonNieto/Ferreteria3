@@ -1,0 +1,13 @@
+productos pagina inicio
+
+1) models\producto
+	public funcion getRandom()
+2) destacados cambiar el titulo
+3) productoController llamar el metodo getRandom en index
+4) en destacados recorremos la tabla de productos
+5) mostramos las imagenes... si no tiene imagen... mostramos
+	una por default
+6)cuadramos los stilos para que todos tengan el mismo tamano
+
+
+

@@ -1,0 +1,73 @@
+Crear registro
+1) se crea el modelo usuario
+- con el primer metodo ---save
+- cuando el controlador reciba esos datos debe...
+	a)requerir el modelo
+	b)crear una funcion de registro, con los datos recibidos 
+		del formulario
+	c) al final del save..llama a la funcion save del modelo
+	d) se inicia la session en index session_start()
+	e) aprovechamos para crear el deleteSession
+		-creamos una carpeta helpers(ayudas) y dentro utils.php
+		-utils el deleteSession
+	f) en el index se require --> helpers/utils
+	g) se crea la sesion para saber quien esta logeado...tanto
+		en controlador como en registro
+	h) se crea el css con el color de register y failed
+
+
+
+
+Crear login
+//identificar el usuario
+//consulta a la base de datos
+//crear la session
+1) crear la funcion login en usuarioController
+	a) comprobar si llegar datos por POST
+	b) identificar el usuario
+2) crear la funcion login en models/usuario
+	a) se crea el sql para saber el usuario
+	b) si login es true y hay columnas ( ya tenemos un usuario registrado)
+
+        //comprobar si existe el usuario
+        $sql = "SELECT * FROM t_usuarios WHERE email = '$email'";
+        $login = $this->db->query($sql);
+
+        if($login && $login->num_rows() == 1){
+            $usuario = $login->fetch_object(); //sacar el objeto que me ha devuelto la bdatos
+
+            //verificar la contraseña
+            $verify = password_verify($password, $usuario->password);
+
+            if($verify){
+                $result = $usuario;
+            }
+
+        }
+        return $result;
+
+3) volvemos a usuarioController
+	  if(isset($_POST)){
+            //identificar el usuario
+            //consulta a la base de datos
+            $usuario = new Usuario();
+            $usuario->setEmail($_POST['email']);
+            $usuario->setPassword($_POST['password']);
+            
+            $identity = $usuario->login();
+
+            var_dump($identity);
+            die();
+
+4) en el sidebar--- hay que modificar hacia donde se dirige la accion 
+	del login
+      <form action="<?=base_url?>usuario/login" method="post">
+
+5) en usuarioController... completar el identity
+cambiar el password_has de set al get
+
+6) en el sidebar... crear el if de 'admin'
+
+7) cerrar sesion
+- crear el link en sidebar
+- controlador...

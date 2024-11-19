@@ -1,0 +1,30 @@
+productos por categoria
+
+1) categoriaController
+	crear la function ver()
+	require_once 'views/categoria/ver.php';
+
+2) creamos la vista ver.php
+	inicialmente verificar si existe categoria
+
+3) en el header creamos el link
+	<a href="<?=base_url?>categoria/ver&id"><?=$cat->categoria?></a>
+4) en model/categoria 
+	crear getOne()
+
+5) completar el ver() de categoriaController
+	//conseguir productos
+
+6) agregar en categoriaController 
+	el require_once 'models/producto.php'
+
+7) en el modelo de producto
+	creamos un getAllCategory()
+
+8) copiar la rutina de destacados para recorrer productos
+	views\categoria\ver
+
+9) enlazamos el inicio header (menu)
+	<a href="<?=base_url?>">Inicio</a>
+
+	

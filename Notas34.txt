@@ -1,0 +1,19 @@
+Crear categoria
+1) Crear bien los enlaces..sidebar
+	-primero categoria/index en gestionar categoria
+2) en categoriaController  crear categoria
+	- crear la function crear
+3) en views/categoria crear crear.php (empezamos con un formulario)
+	<form action="<?=base_url?>categoria/save">
+4) en helpers/util -> creamos una funcion para saber si estamos en admin o no
+	isAdmin (la voy a utilizar en todas partes donde necesite saber si esta
+	logeado un admin)
+5) crear el link de registrarse sidebar
+6) se crea la function save en categoriaController
+7) crear el metodo save() en el modelo 
+8) crear las categorias en el menu
+	en utils crear una funcion para mostrar categorias en el menu
+9) en el layout/header
+	<?php Utils::showCategorias(); ?> en el menu
+	esto me devuelve un objeto con las categorias
+

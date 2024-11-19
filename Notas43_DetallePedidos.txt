@@ -1,0 +1,26 @@
+Notas43_DetallePedidos
+
+1) pedidoControler
+	- function detalle()
+	- require_once 'views/pedido/detalle.php';
+	- recoger los datos del pedido que nos interesan
+2) Gestion pedidos
+	pedido controller
+
+	- crear gestion 
+		utilizamos la misma vista de mis_pedidos
+	- gestion flap
+	- en mis pedido escoger 
+		-mis pedidos o
+		-gestion
+	 - Agregar estado
+3) cambiar el estado de un pedido
+	solo si es administrador
+	- En Detalle crear showStatus en utils
+
+	- Crear el metodo estado para grabar el nuevo estado
+4) model pedido
+	crear public funcion edit()
+		para actualizar un pedido en concreto
+	
+		

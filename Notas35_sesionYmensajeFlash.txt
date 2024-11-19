@@ -1,0 +1,28 @@
+Notas35_sesionYmensajeFlash
+---
+1) crear mensaje de exito/fallo de creacion de producto
+	debajo del boton en gestion... agregamos..
+	if (isset($_SESSION['producto']) && $_SESSION['producto'] == 'complete'): ?>
+	    <strong class="alert_green">El producto se ha creado correctamente</strong>
+2) insertar imagen
+	- primero en el formulario agregar el enctype (permite 
+		enviar archivos/ficheros en el formulario
+		enctype="multipart/form-data"
+	- luego en productoController
+	tipos de mime
+	https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+3) borrar producto
+	- gestion (crear acciones)
+	- creamos los botones
+	- styes button-gestion
+	- crear los enlaces editar y eliminar
+	- ojo si quiero editar o eliminar debo envia el codigo
+		del producto a editar o a eliminar
+	- productoController---
+		crear los metodos editar y eliminar
+		solo con el var_dump
+	- models/producto
+		crear los metodos editar y eliminar
+	- producto controller completar el objeto elimar
+	- crear las sesiones de borrado
+

@@ -1,0 +1,25 @@
+Notas42 - Pedidos
+1) index de carrito - boton
+2) pedido controller - views/pedido/hacer.php
+3) hacer formulario de pedido
+4) crear el modelo pedido.php (copiarlo de producto)
+	getter-setter-
+	funcion save
+5)pedidoController 
+	-require_once 'models/pedido.php';
+	-tomar el costo de Utils::stadistic
+	-validar si $save es true
+6)grabar linea_pedidos
+	- pedidoController $save_linea = $pedido->save_linea();
+	- modelo pedidos creamos save_linea
+	- redireccionar a views/pedido/confirmado
+	- Datos del pedido
+	- getOneByUser
+7)Mis pedidos
+	-pedidoController - mis_pedidos
+	-views mis_pedidos
+	-modificar el sidebar
+	-models/pedido public function getAllByUser(){
+	-crear en mis pedidos una tabla para listar los pedidos
+
+

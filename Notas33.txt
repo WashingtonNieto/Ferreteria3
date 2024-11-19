@@ -1,0 +1,27 @@
+gestionar categorias
+1) sidebar
+	se defines los items que van a ver los admin y los identity
+2) categoria
+	controladorCategoria ... se verifica el index
+	vamos a cargar una vista 
+	- en views--- carpeta-> categoria y un index.php	
+		<h1>Gestionar Categorias</h1>
+3)creamos un model ( representa la bdatos de categoria)
+	despues de los gettes y los settes..
+	se crea el getAll (para traer todas las categorias)
+4) es getAll se llama desde el controlador
+	        $categoria = $categoria->getAll();
+5) y en el index de la vista se cargan
+    <?php while($cat = $categorias->fetch_object()): ?>
+        <?=$cat->categoria;?>
+    <?php endwhile; ?>
+ en forma de tabla
+
+6) cambiamos la tabla con css
+
+7) creamos un boton en el index para crear categorias
+
+
+
+
+
