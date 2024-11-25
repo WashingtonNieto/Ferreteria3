@@ -431,10 +431,31 @@ button{
 
 /* Carrito */
 
+.delete-carrito{
+    width: 320PX;
+    float: left;
+}
+
+
+.button-delete{
+    display: block;
+    float: left;
+    width: 100px;
+}
+
+
+.button-carrito{
+    width: 70px;
+    margin: 0px auto;
+    text-align: center;
+}
+
 .total-carrito{
     width: 320PX;
     float: right;
 }
+
+
 
 
 .total-carrito h3{
@@ -448,4 +469,18 @@ button{
     display: block;
     float: right;
     width: 100px;
+}
+
+.updown-unidades{
+    width: 80px;
+    margin: 0px auto;
+}
+
+
+.updown-unidades .button{
+    display: block;
+    width: 20px;
+    float: left;
+    padding: 2px;
+    margin: 7px;
 }
